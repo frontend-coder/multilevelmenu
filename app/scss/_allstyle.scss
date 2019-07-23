@@ -8,14 +8,201 @@
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
+
 .block_wrap {
 	display: flex;
 	justify-content: space-between;
 }
 
 .block_othercolor {
-background-color: grey;
+	background-color: grey;
 }
+
 .block_othercolor .owl-carousel .item {
-cursor: pointer;
+	cursor: pointer;
 }
+
+
+
+
+.top_sidemenu {
+	position: fixed;
+	list-style: none;
+	left: -400px;
+	top: 0;
+	width: 100%;
+	max-width: 360px;
+	z-index: 9999;
+	background: #FFF;
+	height: 100%;
+	transition: all 0.9s ease;
+}
+
+
+.top_sidemenu-active {
+left: 0;
+ }
+
+
+
+
+.accordion {
+	padding-top: 30px;
+	margin: 0 auto 20px;
+	background: #FFF;
+	border-radius: 4px;
+
+}
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #4D4D4D;
+	font-size: 14px;
+	font-weight: 700;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+	color: #595959;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+.accordion li.open .link {
+	color: #b63b4d;
+}
+
+.accordion li.open i {
+	color: #b63b4d;
+}
+
+.accordion li.open i.fa-chevron-down {
+	transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+ .submenu {
+ 	display: none;
+ 	background: #444359;
+ 	font-size: 14px;
+ }
+
+ .submenu li {
+ 	border-bottom: 1px solid #4b4a5e;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	padding-left: 42px;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	background: #b63b4d;
+ 	color: #FFF;
+ }
+
+
+
+
+
+
+ .hamburger {
+ 	position: fixed;
+ 	top:20px;
+ 	right: 20px;
+ }
+
+
+
+
+ button {
+ 	width:45px;
+ 	background:transparent;
+ 	border:none;
+ 	height:35px;
+ 	padding:0px;
+ 	overflow:hidden;
+ }
+
+ button:focus{
+ 	outline:none;
+ }
+
+ .effect1 span{
+ 	display:inline-block;
+ 	width:80%;
+ 	height:3px;
+ 	background:#000;
+ 	position:relative;
+ 	transition:all .2s;
+ }
+
+ .effect1 span:before,
+ .effect1 span:after{
+ 	content:'';
+ 	position:absolute;
+ 	width:100%;
+ 	background:#000;
+ 	height:3px;
+ 	left:0px;
+ 	transition:all .3s;
+ }
+
+ .effect1 span:before{
+ 	top:10px;
+ }
+
+ .effect1 span:after{
+ 	bottom:10px;
+ }
+
+ button.effect1:hover span:after{
+ 	left:-5px;
+ }
+
+ button.effect1:hover span:before{
+ 	left:5px;
+ }
+
+ button.effect1 span.active{
+ 	background: transparent;
+ }
+
+ button.effect1 span.active:after,
+ button.effect1 span.active:before{
+ 	top: 0px;
+ 	left: 0px;
+ }
+
+ button.effect1 span.active:after{
+ 	transform:rotate(-45deg);
+ }
+
+ button.effect1 span.active:before{
+ 	transform:rotate(45deg);
+ }
