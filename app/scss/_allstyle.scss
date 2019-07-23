@@ -2,6 +2,21 @@
 	padding: 50px 0;
 }
 
+.top_menu_line {
+	top:0;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: #000;
+}
+
+
+
+
+
+
+
+
 .block_title {
 	font-size: 1.5rem;
 	text-align: center;
@@ -28,7 +43,7 @@
 .top_sidemenu {
 	position: fixed;
 	list-style: none;
-	left: -400px;
+	right: -400px;
 	top: 0;
 	width: 100%;
 	max-width: 360px;
@@ -40,8 +55,8 @@
 
 
 .top_sidemenu-active {
-left: 0;
- }
+	right: 0;
+}
 
 
 
@@ -51,6 +66,7 @@ left: 0;
 	margin: 0 auto 20px;
 	background: #FFF;
 	border-radius: 4px;
+	list-style: none;
 
 }
 
@@ -125,23 +141,27 @@ left: 0;
  	background: #b63b4d;
  	color: #FFF;
  }
-
-
-
-
-
-
  .hamburger {
+ 	background-color: #000;
+width: 50px;
+height: 50px;
  	position: fixed;
- 	top:20px;
- 	right: 20px;
+ 	position: absolute;
+ 	top:24px;
+ 	//right: 455px;
+ 	left:-127px;
+ 	z-index: 9999;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	padding:0;
+ 	padding-bottom: 6px;
  }
-
-
-
-
+ .hamburger_active {
+ 	left:-50px;
+ }
  button {
- 	width:45px;
+ 	width:35px;
  	background:transparent;
  	border:none;
  	height:35px;
@@ -157,7 +177,7 @@ left: 0;
  	display:inline-block;
  	width:80%;
  	height:3px;
- 	background:#000;
+ 	background:#fff;
  	position:relative;
  	transition:all .2s;
  }
@@ -167,7 +187,7 @@ left: 0;
  	content:'';
  	position:absolute;
  	width:100%;
- 	background:#000;
+ 	background:#fff;
  	height:3px;
  	left:0px;
  	transition:all .3s;

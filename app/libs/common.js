@@ -34,7 +34,8 @@ $(document).ready(function () {
 
 $('button.effect1').on('click',function(){
   $(this).find('span').toggleClass('active');
-      $(".top_sidemenu").toggleClass("top_sidemenu-active");
+  $('.hamburger').toggleClass("hamburger_active");
+  $(".top_sidemenu").toggleClass("top_sidemenu-active");
 });
 
 $(function() {

@@ -896,6 +896,14 @@ body input:required:valid, body textarea:required:valid {
   padding: 50px 0;
 }
 
+.top_menu_line {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+
 .block_title {
   font-size: 1.5rem;
   text-align: center;
@@ -925,7 +933,7 @@ body input:required:valid, body textarea:required:valid {
 .top_sidemenu {
   position: fixed;
   list-style: none;
-  left: -400px;
+  right: -400px;
   top: 0;
   width: 100%;
   max-width: 360px;
@@ -938,7 +946,7 @@ body input:required:valid, body textarea:required:valid {
 }
 
 .top_sidemenu-active {
-  left: 0;
+  right: 0;
 }
 
 .accordion {
@@ -946,6 +954,7 @@ body input:required:valid, body textarea:required:valid {
   margin: 0 auto 20px;
   background: #FFF;
   border-radius: 4px;
+  list-style: none;
 }
 
 .accordion .link {
@@ -1027,13 +1036,36 @@ body input:required:valid, body textarea:required:valid {
 }
 
 .hamburger {
+  background-color: #000;
+  width: 50px;
+  height: 50px;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  position: absolute;
+  top: 24px;
+  left: -127px;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  padding-bottom: 6px;
+}
+
+.hamburger_active {
+  left: -50px;
 }
 
 button {
-  width: 45px;
+  width: 35px;
   background: transparent;
   border: none;
   height: 35px;
@@ -1049,7 +1081,7 @@ button:focus {
   display: inline-block;
   width: 80%;
   height: 3px;
-  background: #000;
+  background: #fff;
   position: relative;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
@@ -1061,7 +1093,7 @@ button:focus {
   content: '';
   position: absolute;
   width: 100%;
-  background: #000;
+  background: #fff;
   height: 3px;
   left: 0px;
   -webkit-transition: all .3s;
