@@ -1,0 +1,21 @@
+.block {
+	padding: 50px 0;
+}
+
+.block_title {
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.block_wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block_othercolor {
+background-color: grey;
+}
+.block_othercolor .owl-carousel .item {
+cursor: pointer;
+}
