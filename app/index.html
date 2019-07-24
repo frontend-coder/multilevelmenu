@@ -22,63 +22,35 @@
 		body {opacity: 0;overflow-x: hidden;}
 	</style>
 	<link rel="stylesheet" href="css/libs.min.css" />
+
+
+
+
+<!--
+<script>
+
+
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+   document.getElementById('fabars').style.opacity = '0';
+   document.getElementById('fatimes').style.opacity = '1';
+     document.getElementById('fabars').addClass('fabars_hidden');
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+   document.getElementById('fatimes').style.opacity = '0';
+       document.getElementById('fabars').addClass('fabars_visible');
+  }-->
+
+
+
+
 </head>
 
 <body>
 
-	<div class="burge">
-		<a href="#" class="burger_button">
-			<span class="burger_lines"></span>
-		</a>
-		<nav class="burger_nav">
-			<ul>
-				<li><a class="burger_link" href="https://www.facebook.com/frontendercode">Ссылка первая </a></li>
-				<li><a  class="burger_link" href="https://www.facebook.com/frontendercode">Ссылка длиннаая</a></li>
-				<li><a class="burger_link"  href="https://www.facebook.com/frontendercode">Ссылка самая длинная</a></li>
-				<li><a  class="burger_link" href="https://www.facebook.com/frontendercode">Ссылка на рубрику</a></li>
-				<li><a class="burger_link"  href="https://www.facebook.com/frontendercode">Ссылка еще на одну рубрику</a></li>
-			</ul>
-		</nav>
-		<div class="burger_overlay"></div>
-	</div>
-
-
-
-	<!-- 	<ul id="accordion" class="accordion">
-			<li>
-				<div class="link"><i class="fa fa-database"></i>Web Design<i class="fa fa-chevron-down"></i></div>
-				<ul class="submenu">
-					<li><a href="https://github.com/frontend-coder">Photoshop</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">HTML</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">CSS</a></li>
-				</ul>
-			</li>
-			<li>
-				<div class="link"><i class="fa fa-code"></i>Coding<i class="fa fa-chevron-down"></i></div>
-				<ul class="submenu">
-					<li><a href="https://www.facebook.com/frontendercode">Javascript</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">jQuery</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">Ruby</a></li>
-				</ul>
-			</li>
-			<li>
-				<div class="link"><i class="fa fa-mobile"></i>Devices<i class="fa fa-chevron-down"></i></div>
-				<ul class="submenu">
-					<li><a href="https://www.facebook.com/frontendercode">Tablet</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">Mobile</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">Desktop</a></li>
-				</ul>
-			</li>
-			<li>
-				<div class="link"><i class="fa fa-globe"></i>Global<i class="fa fa-chevron-down"></i></div>
-				<ul class="submenu">
-					<li><a href="https://www.facebook.com/frontendercode">Google</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">Bing</a></li>
-					<li><a href="https://www.facebook.com/frontendercode">Yahoo</a></li>
-				</ul>
-			</li>
-		</ul>
-	-->
 
 
 
@@ -86,8 +58,46 @@
 
 	<!-- Custom HTML -->
 	<header id="header" class="header_fon">
-<!-- <div class="top_menu_line"></div>
--->
+		<span class="toggle-button">
+        	<div class="menu-bar menu-bar-top"></div>
+        	<div class="menu-bar menu-bar-middle"></div>
+        	<div class="menu-bar menu-bar-bottom"></div>
+        </span>
+		<div class="menu-wrap">
+			<div class="menu-sidebar">
+				<ul class="menu">
+					<li><a href="https://www.facebook.com/frontendercode">Home</a></li>
+					<li><a href="https://www.facebook.com/frontendercode">About</a></li>
+					<li><a href="https://www.facebook.com/frontendercode">Blog</a></li>
+					<li class="menu-item-has-children"><a href="#">Click The Arrow</a>
+						<span class="sidebar-menu-arrow"></span>
+						<ul class="sub-menu">
+							<li><a href="https://www.facebook.com/frontendercode">Alignment</a></li>
+							<li><a href="https://www.facebook.com/frontendercode">Markup</a></li>
+							<li><a href="https://www.facebook.com/frontendercode">Comments</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.facebook.com/frontendercode">Courses</a></li>
+					<li><a href="https://www.facebook.com/frontendercode">Get In Touch</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="header_fon_content">
 	<h1>Заглавие шапки сайта</h1>

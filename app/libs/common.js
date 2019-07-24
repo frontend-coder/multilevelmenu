@@ -35,16 +35,21 @@ https://www.templatemonster.com/blog/demos/slide-out-menu-css3-jquery/slide-out-
 
 
 
+var $toggleButton = $('.toggle-button'),
+    	$menuWrap = $('.menu-wrap'),
+    	$sidebarArrow = $('.sidebar-menu-arrow');
 
-  $(".burge").on('click',function(){
-    $(this).find(".burger_button").toggleClass("burger_button_active");
-     $(this).find(".burger_nav").toggleClass("burger_active");
-     $(this).find(".burger_overlay").toggleClass("burger_overlay_active");
-     $("body").toggleClass("body_hidden");
-    });
+	// Hamburger button
 
-	$('.burger_button').on('click', (e) => {
-			e.preventDefault();
+	$toggleButton.on('click', function() {
+		$(this).toggleClass('button-open');
+		$menuWrap.toggleClass('menu-show');
+	});
+
+	// Sidebar navigation arrows
+
+	$sidebarArrow.click(function() {
+		$(this).next().slideToggle(300);
 	});
 
 
