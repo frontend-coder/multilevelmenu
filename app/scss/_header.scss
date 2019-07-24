@@ -36,7 +36,23 @@ margin-bottom: 30px;
 .header_fon_content p {
 font-size: 1.5rem;
 }
+.block {
+	padding: 50px 0;
+}
 
+.block_title {
+text-align: center;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
 
+.block_wrap {
+	display: flex;
+	justify-content: space-between;
+}
 
-
+.block_othercolor {
+background-color: grey;
+	background-color: grey;
+}

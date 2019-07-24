@@ -11,7 +11,7 @@
 	height: 80px;
 	border-radius: 50%;
 	background-color: #2a2a2a;
-	  transition: all 0.8s ease;
+	  transition: all 0.5s ease;
 }
 .burger_lines:before,
 .burger_lines:after,
@@ -68,7 +68,7 @@
 	background-color: #2a2a2a;
 	overflow-y:auto;
 	left:-100%;
-	 transition: all 0.8s ease;
+	 transition: all 0.5s ease;
 }
 .burger_active {
 	left:0;
@@ -87,12 +87,14 @@
 .burger_nav ul li a:hover {
 filter:brightness(0.7);
 }
-
+.body_hidden {
+	overflow: hidden;
+}
 .burger_overlay {
 	display: none;
 	position: fixed;
 	top:0;
-	 transition: display 0.8s ease;
+	 transition: display 0.4s ease;
 	left:0;
 	width: 100vw;
 	height: 100vh;

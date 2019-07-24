@@ -892,6 +892,33 @@ body input:required:valid, body textarea:required:valid {
   font-size: 1.5rem;
 }
 
+.block {
+  padding: 50px 0;
+}
+
+.block_title {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.block_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block_othercolor {
+  background-color: grey;
+  background-color: grey;
+}
+
 .burger {
   margin-top: 110vh;
 }
@@ -905,9 +932,9 @@ body input:required:valid, body textarea:required:valid {
   height: 80px;
   border-radius: 50%;
   background-color: #2a2a2a;
-  -webkit-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .burger_lines:before,
@@ -981,9 +1008,9 @@ body input:required:valid, body textarea:required:valid {
   background-color: #2a2a2a;
   overflow-y: auto;
   left: -100%;
-  -webkit-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .burger_active {
@@ -1010,13 +1037,17 @@ body input:required:valid, body textarea:required:valid {
           filter: brightness(0.7);
 }
 
+.body_hidden {
+  overflow: hidden;
+}
+
 .burger_overlay {
   display: none;
   position: fixed;
   top: 0;
-  -webkit-transition: display 0.8s ease;
-  -o-transition: display 0.8s ease;
-  transition: display 0.8s ease;
+  -webkit-transition: display 0.4s ease;
+  -o-transition: display 0.4s ease;
+  transition: display 0.4s ease;
   left: 0;
   width: 100vw;
   height: 100vh;
